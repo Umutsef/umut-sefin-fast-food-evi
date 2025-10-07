@@ -82,6 +82,16 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             border-radius: 10px;
         }
+        
+        /* Yeni eklenen resim stili */
+        .recipe-image {
+            width: 100%; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin-bottom: 30px; 
+        }
+
 
         h1 {
             color: #e51d2c;
@@ -308,9 +318,7 @@
             <h1>Umut Şef'e Hoş Geldiniz!</h1>
             <p class="intro-text">Profesyonel aşçılık becerilerini mutfağınıza taşıyın. Burada, en lezzetli ve en çok aranan fast food tariflerini, Umut Şef'in özel ipuçlarıyla bulacaksınız.</p>
             
-            <div class="image-placeholder">
-                [ANASAYFA GÖRSEL ALANI]
-            </div>
+            <img src="images/ana-sayfa.jpg" alt="Anasayfa Görseli" class="recipe-image">
 
             <h2>Haftanın Öne Çıkanları</h2>
             <div class="recipe-cards-grid">
@@ -333,9 +341,7 @@
             <h1>Umut Şef'ten Burger Koleksiyonu</h1>
             <p class="intro-text">En klasik ve en lezzetli burger çeşitleri, Umut Şef'in profesyonel dokunuşlarıyla evinizde!</p>
 
-            <div class="image-placeholder">
-                [BURGERLER GÖRSEL ALANI]
-            </div>
+            <img src="images/burger-koleksiyon.jpg" alt="Burgerler Koleksiyonu Görseli" class="recipe-image">
 
             <div class="recipe-cards-grid">
                 
@@ -371,9 +377,7 @@
                 <span>⭐ Zorluk: Kolay</span>
             </div>
             
-            <div class="image-placeholder">
-                [CHEESEBURGER GÖRSEL ALANI]
-            </div>
+            <img src="images/cheeseburger.jpg" alt="Klasik Cheeseburger Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler (4 Hamburger İçin)</h2>
@@ -425,9 +429,7 @@
                 <span>⭐ Zorluk: Orta</span>
             </div>
             
-            <div class="image-placeholder">
-                [ISLAK HAMBURGER GÖRSEL ALANI]
-            </div>
+            <img src="images/islak-hamburger.jpg" alt="Islak Hamburger Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler (4 Hamburger İçin)</h2>
@@ -482,9 +484,7 @@
                 <span>⭐ Zorluk: Orta</span>
             </div>
             
-            <div class="image-placeholder">
-                [TAVUK BURGER GÖRSEL ALANI]
-            </div>
+            <img src="images/tavuk-burger.jpg" alt="Çıtır Tavuk Burger Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler (4 Burger İçin)</h2>
@@ -525,9 +525,7 @@
             <h1>Umut Şef'ten Pizzalar</h1>
             <p class="intro-text">Hızlı, kolay ve ev yapımı pizza tarifleri. İtalyan lezzeti Umut Şef'in dokunuşuyla!</p>
 
-            <div class="image-placeholder">
-                [PİZZALAR GÖRSEL ALANI]
-            </div>
+            <img src="images/pizza-koleksiyon.jpg" alt="Pizzalar Koleksiyonu Görseli" class="recipe-image">
 
             <div class="recipe-cards-grid">
                 
@@ -557,9 +555,7 @@
                 <span>⭐ Zorluk: Orta</span>
             </div>
             
-            <div class="image-placeholder">
-                [KARIŞIK PİZZA GÖRSEL ALANI]
-            </div>
+            <img src="images/karisik-pizza.jpg" alt="Karışık Pizza Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
@@ -613,9 +609,7 @@
                 <span>⭐ Zorluk: Kolay</span>
             </div>
             
-            <div class="image-placeholder">
-                [MARGARITA PİZZA GÖRSEL ALANI]
-            </div>
+            <img src="images/margarita-pizza.jpg" alt="Margarita Pizza Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
@@ -656,15 +650,13 @@
             <h1>Umut Şef'in Hikayesi</h1>
             
             <section class="chef-story">
-                <div class="image-placeholder" style="height: 150px;">
-                    [ŞEF UMUT'UN PORTRESİ ALANI]
-                </div>
+                <img src="images/umut-sef.jpg" alt="Şef Umut'un Portresi" class="recipe-image" style="max-height: 250px; width: 300px; display: block; margin: 0 auto 30px auto;">
                 
                 <p>Umut Şef'in Fast Food Evi fikri, bizzat **Umut Şef Okulu'nda** ders çalışırken doğdu. Şefimiz, öğrencilerin ve gençlerin sürekli olarak yüksek fiyatlar ödeyerek, çoğu zaman ne içerdiğini bilmedikleri sağlıksız fast food ürünlerini tükettiğini gözlemledi.</p>
                 
                 <p>O an aklına şu fikir geldi: **"Neden herkesin yararlanabileceği, kaliteli ve sağlıklı yemekleri evde yapmalarını sağlayacak bir site oluşturmayayım?"** Bu amaçla yola çıkarak, gençlerin en çok tükettiği fast food ürünlerini seçti ve bu siteyi kurdu. Temel hedefi; insanların çok para verip sağlıksız yemekler yemesini engellemek ve herkesin kendi mutfağında, profesyonel tekniklerle temiz ve lezzetli yemekler yapmasını sağlamaktır.</p>
             </section>
-            </section>
+        </section>
     </main>
 
     <main id="snacks-collection" class="page-content">
@@ -672,9 +664,7 @@
             <h1>Umut Şef'ten Atıştırmalıklar ve Ek Lezzetler</h1>
             <p class="intro-text">Burgerlerin yanında en iyi giden, çıtır çıtır ve lezzet dolu atıştırmalıklar. Hepsini evde kolayca hazırlayın!</p>
 
-            <div class="image-placeholder">
-                [ATIŞTIRMALIKLAR GÖRSEL ALANI]
-            </div>
+            <img src="images/atistirmalik-koleksiyon.jpg" alt="Atıştırmalıklar Koleksiyonu Görseli" class="recipe-image">
 
             <div class="recipe-cards-grid">
                 
@@ -710,9 +700,7 @@
                 <span>⭐ Zorluk: Orta</span>
             </div>
             
-            <div class="image-placeholder">
-                [PATATES KIZARTMASI GÖRSEL ALANI]
-            </div>
+            <img src="images/patates-kizartmasi.jpg" alt="Çıtır Patates Kızartması Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
@@ -755,9 +743,7 @@
                 <span>⭐ Zorluk: Kolay</span>
             </div>
             
-            <div class="image-placeholder">
-                [TAVUK NUGGETS GÖRSEL ALANI]
-            </div>
+            <img src="images/nuggets.jpg" alt="Tavuk Nuggets Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
@@ -799,9 +785,7 @@
             <h1>Umut Şef'ten Tatlılar ve İçecekler</h1>
             <p class="intro-text">Fast food deneyimini tamamlayan, serinletici ve lezzetli tarifler.</p>
 
-            <div class="image-placeholder">
-                [TATLI VE İÇECEKLER GÖRSEL ALANI]
-            </div>
+            <img src="images/tatli-icecek-koleksiyon.jpg" alt="Tatlılar ve İçecekler Koleksiyonu Görseli" class="recipe-image">
 
             <div class="recipe-cards-grid">
                 
@@ -837,9 +821,7 @@
                 <span>⭐ Zorluk: Çok Kolay</span>
             </div>
             
-            <div class="image-placeholder">
-                [MİLKSHAKE GÖRSEL ALANI]
-            </div>
+            <img src="images/milkshake.jpg" alt="Vanilyalı Milkshake Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
@@ -879,9 +861,7 @@
                 <span>⭐ Zorluk: Orta</span>
             </div>
             
-            <div class="image-placeholder">
-                [SUFLE GÖRSEL ALANI]
-            </div>
+            <img src="images/sufle.jpg" alt="Akışkan Çikolatalı Sufle Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler (4 Sufle Kabı İçin)</h2>
@@ -925,9 +905,7 @@
                 <span>⭐ Zorluk: Çok Kolay</span>
             </div>
             
-            <div class="image-placeholder">
-                [COOL LİME GÖRSEL ALANI]
-            </div>
+            <img src="images/cool-lime.jpg" alt="Serinletici Cool Lime Görseli" class="recipe-image">
 
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
