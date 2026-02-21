@@ -2,337 +2,33 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umut Şef'in Fast Food Evi</title>
-   
-    
+    <meta name="description" content="Umut Şef'in özel fast food tarifleri: burger, pizza, atıştırmalık, tatlı ve içecekler.">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6PPE39LGG"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-E6PPE39LGG');
     </script>
-    <style>
-        /* GENEL STİL VE TEMEL SIFIRLAMA */
-        /* ... CSS kodları ... */ 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6PPE39LGG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-E6PPE39LGG');
-    </script>
-    <style>
-        /* GENEL STİL VE TEMEL SIFIRLAMA */
-        /* ... CSS kodları ... */
-    <style>
-        /* GENEL STİL VE TEMEL SIFIRLAMA */
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* HEADER VE NAVİGASYON (DESKTOP) */
-        header {
-            background-color: #e51d2c;
-            color: white;
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            flex-wrap: wrap; 
-        }
-
-        .logo {
-            font-size: 2em;
-            font-weight: 900;
-            letter-spacing: 1px;
-            cursor: pointer;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-weight: 500;
-            font-size: 1.1em;
-            transition: color 0.3s;
-            cursor: pointer;
-        }
-        
-        /* Yönetici Paneli Linkine Özel Stil */
-        nav a.admin-link {
-            background-color: #ffcc00;
-            color: #333;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffcc00;
-        }
-        
-        /* Yönetici Paneli Linkinin Hover Stili */
-        nav a.admin-link:hover {
-            background-color: #e51d2c;
-            color: white;
-        }
-
-        /* Sayfa İçerik Konteyneri (Tüm Görünümler) */
-        .page-content {
-            display: none;
-        }
-
-        .page-content.active {
-            display: block;
-        }
-
-        /* ANA İÇERİK VE TARİF YAPISI */
-        .recipe-container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        
-        /* Yeni eklenen resim stili */
-        .recipe-image {
-            width: 100%; 
-            max-height: 400px; 
-            object-fit: cover; 
-            border-radius: 8px; 
-            margin-bottom: 30px; 
-        }
-
-
-        h1 {
-            color: #e51d2c;
-            border-bottom: 3px solid #ffcc00;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-            font-size: 2.5em;
-            font-weight: 700;
-        }
-
-        h2 {
-            color: #333;
-            margin-top: 35px;
-            font-size: 1.8em;
-            border-left: 5px solid #ffcc00;
-            padding-left: 10px;
-        }
-        
-        /* GÖRSEL ALANLARI İÇİN YER TUTUCU STİLİ */
-        .image-placeholder {
-            height: 200px; 
-            background-color: #eee; 
-            border: 1px dashed #ccc; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            color: #666;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-align: center;
-        }
-        
-        /* BURGERLER VE ATIŞTIRMALIKLAR SAYFALARI İÇİN KART YAPISI */
-        .recipe-cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .recipe-card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-
-        .recipe-card h2 {
-            color: #333;
-            font-size: 1.5em;
-            padding: 10px 15px;
-            border-bottom: 2px solid #f4f4f4;
-            margin-top: 0;
-        }
-
-        .read-more-button {
-            display: inline-block;
-            background-color: #ffcc00;
-            color: #333;
-            padding: 12px 25px;
-            margin-bottom: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        /* YÖNETİCİ PANELİ İÇİN ÖZEL STİL */
-        .admin-panel-content {
-            text-align: center;
-            padding-top: 40px;
-        }
-
-        /* Yönetici Login Formu Stilleri */
-        .login-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            max-width: 400px;
-            margin: 30px auto;
-            padding: 30px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .login-form input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 1.1em;
-            text-align: center;
-        }
-        
-        .login-button {
-            background-color: #e51d2c;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .login-button:hover {
-             background-color: #ffcc00;
-             color: #333;
-        }
-        
-        /* Admin Linki Butonu */
-        .admin-panel-content a {
-            display: inline-block;
-            background-color: #e51d2c;
-            color: white;
-            padding: 15px 30px;
-            margin-top: 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: background-color 0.3s;
-        }
-
-        .admin-panel-content a:hover {
-             background-color: #ffcc00;
-             color: #333;
-        }
-        
-        /* Mesaj Stilleri */
-        .message {
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 15px;
-            display: none;
-            font-weight: bold;
-            width: 100%;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        .error {
-            background-color: #fdd;
-            color: #e51d2c;
-            border: 1px solid #e51d2c;
-        }
-        .success {
-            background-color: #dfd;
-            color: #388e3c;
-            border: 1px solid #388e3c;
-        }
-        
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-            background-color: #333;
-            color: white;
-            font-size: 0.9em;
-        }
-        
-        footer p {
-            margin: 5px 0;
-        }
-        
-        /* MOBİL UYUMLULUK (MEDIA QUERIES) */
-        @media (max-width: 768px) {
-            .recipe-container {
-                margin: 15px;
-                padding: 20px;
-            }
-            header {
-                flex-direction: column; 
-                padding: 15px 20px;
-                align-items: flex-start;
-            }
-            .logo {
-                margin-bottom: 10px; 
-            }
-            nav {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap; 
-                justify-content: space-between;
-            }
-            nav a {
-                margin: 5px 0;
-                font-size: 0.9em;
-                padding: 5px 10px;
-                flex-basis: auto; 
-            }
-        }
-    </style>
-    </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+
     <header>
-        <div class="logo" onclick="showPage('home')">UMUT ŞEF'İN FAST FOOD EVİ</div> 
+        <a class="logo" href="#home" data-page="home">UMUT ŞEF'İN FAST FOOD EVİ</a> 
         <nav>
-            <a onclick="showPage('home')">Anasayfa</a>
-            <a onclick="showPage('burgers')">Burgerler</a> 
-            <a onclick="showPage('pizzas-collection')">Pizzalar</a> 
-            <a onclick="showPage('snacks-collection')">Atıştırmalıklar</a>
-            <a onclick="showPage('desserts-collection')">Tatlılar & İçecekler</a> 
-            <a onclick="showPage('chef-corner')">Şefin Köşesi</a>
-            <a onclick="showPage('faq')">SSS</a> 
-            <a onclick="showPage('membership')">Üyelik</a> 
+            <a href="#home" data-page="home">Anasayfa</a>
+            <a href="#burgers" data-page="burgers">Burgerler</a> 
+            <a href="#pizzas-collection" data-page="pizzas-collection">Pizzalar</a> 
+            <a href="#snacks-collection" data-page="snacks-collection">Atıştırmalıklar</a>
+            <a href="#desserts-collection" data-page="desserts-collection">Tatlılar & İçecekler</a> 
+            <a href="#chef-corner" data-page="chef-corner">Şefin Köşesi</a>
+            <a href="#faq" data-page="faq">SSS</a> 
+            <a href="#membership" data-page="membership">Üyelik</a> 
             
-            <a onclick="showPage('admin-panel')" class="admin-link">Üye Listesi (Yönetici)</a>
+            <a href="#admin-panel" data-page="admin-panel" class="admin-link">Üye Listesi (Yönetici)</a>
         </nav>
     </header>
     
@@ -348,12 +44,12 @@
                 <div class="recipe-card">
                     <h2>Çikolatalı Sufle</h2>
                     <p>Akışkan çikolata hazzını evde yaşayın.</p>
-                    <span class="read-more-button" onclick="showPage('sufle')">Tarife Git</span> 
+                    <button type="button" class="read-more-button navigate-button" data-page="sufle">Tarife Git</button> 
                 </div>
                 <div class="recipe-card">
                     <h2>Klasik Cheeseburger</h2>
                     <p>Orijinal usulde sulu köfte ve erimiş cheddar peyniri.</p>
-                    <span class="read-more-button" onclick="showPage('cheeseburger')">Tarife Git</span> 
+                    <button type="button" class="read-more-button navigate-button" data-page="cheeseburger">Tarife Git</button> 
                 </div>
             </div>
         </section>
@@ -371,19 +67,19 @@
                 <div class="recipe-card">
                     <h2>Islak Hamburger (Gagası)</h2>
                     <p>Bol soslu ve yumuşacık ekmeğiyle klasik lezzet.</p>
-                    <span class="read-more-button" onclick="showPage('islak-hamburger')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="islak-hamburger">Tarife Git</button>
                 </div>
 
                 <div class="recipe-card">
                     <h2>Çıtır Tavuk Burger</h2>
                     <p>Özel marine edilmiş çıtır tavuk filetosu.</p>
-                    <span class="read-more-button" onclick="showPage('tavuk-burger')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="tavuk-burger">Tarife Git</button>
                 </div>
                 
                 <div class="recipe-card">
                     <h2>Klasik Cheeseburger</h2>
                     <p>Orijinal tarifine sadık, sulu köfte ve erimiş cheddar peyniri.</p>
-                    <span class="read-more-button" onclick="showPage('cheeseburger')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="cheeseburger">Tarife Git</button>
                 </div>
             </div>
         </section>
@@ -406,30 +102,30 @@
                 <h2>Malzemeler (4 Hamburger İçin)</h2>
                 <h3>Köfte ve Peynir İçin</h3>
                 <ul>
-                    <li>500 gr **%80 Yağlı Dana Kıyma**</li>
-                    <li>4 dilim **Cheddar Peyniri**</li>
-                    <li>**Kaya Tuzu** ve **Taze Çekilmiş Karabiber**</li>
+                    <li>500 gr <strong>%80 Yağlı Dana Kıyma</strong></li>
+                    <li>4 dilim <strong>Cheddar Peyniri</strong></li>
+                    <li><strong>Kaya Tuzu</strong> ve <strong>Taze Çekilmiş Karabiber</strong></li>
                 </ul>
                 <h3>Diğer Malzemeler</h3>
                 <ul>
-                    <li>4 adet **Brioche Tipi Hamburger Ekmeği**</li>
-                    <li>4 yaprak **Göbek Marul**</li>
-                    <li>2 adet **Salkım Domates** (İnce dilimlenmiş)</li>
-                    <li>1/2 adet **Kırmızı Soğan** (İnce, halka dilimlenmiş)</li>
-                    <li>**Ketçap, Hardal** veya özel bir **Hamburger Sosu** (İsteğe bağlı)</li>
+                    <li>4 adet <strong>Brioche Tipi Hamburger Ekmeği</strong></li>
+                    <li>4 yaprak <strong>Göbek Marul</strong></li>
+                    <li>2 adet <strong>Salkım Domates</strong> (İnce dilimlenmiş)</li>
+                    <li>1/2 adet <strong>Kırmızı Soğan</strong> (İnce, halka dilimlenmiş)</li>
+                    <li><strong>Ketçap, Hardal</strong> veya özel bir <strong>Hamburger Sosu</strong> (İsteğe bağlı)</li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Köfteleri Hazırlayın:** Kıymayı nazikçe 4 eşit top yapın. Buzdolabında tutun.</li>
-                    <li>**Tavayı Isıtın:** Döküm bir tavayı veya kalın tabanlı bir ızgarayı **çok yüksek ısıda** ısıtın.</li>
-                    <li>**Smash Tekniği:** Köfte toplarını tavaya koyun ve bir spatula ile **1 cm kalınlığında ezerek** tavaya yapıştırın.</li>
-                    <li>**Baharat:** Ezdiğiniz köftelerin üst yüzeyini hemen **bolca** tuz ve karabiberle baharatlandırın.</li>
-                    <li>**Pişirme ve Peynir:** 2 dakika sonra köfteleri çevirin. Peynir dilimini hemen üzerine koyun ve erimesi için bir dakika daha pişirin.</li>
-                    <li>**Ekmekleri Hazırlayın:** Köfteler pişerken, ekmeklerin iç yüzeylerini aynı tavada, köftelerden kalan yağda **hafifçe kızartın**.</li>
-                    <li>**Birleştirme:** Ekmeklerin alt kısmına sos, üzerine marul, domates, soğan ve erimiş peynirli köfteyi koyarak hemen servis yapın.</li>
+                    <li><strong>Köfteleri Hazırlayın:</strong> Kıymayı nazikçe 4 eşit top yapın. Buzdolabında tutun.</li>
+                    <li><strong>Tavayı Isıtın:</strong> Döküm bir tavayı veya kalın tabanlı bir ızgarayı <strong>çok yüksek ısıda</strong> ısıtın.</li>
+                    <li><strong>Smash Tekniği:</strong> Köfte toplarını tavaya koyun ve bir spatula ile <strong>1 cm kalınlığında ezerek</strong> tavaya yapıştırın.</li>
+                    <li><strong>Baharat:</strong> Ezdiğiniz köftelerin üst yüzeyini hemen <strong>bolca</strong> tuz ve karabiberle baharatlandırın.</li>
+                    <li><strong>Pişirme ve Peynir:</strong> 2 dakika sonra köfteleri çevirin. Peynir dilimini hemen üzerine koyun ve erimesi için bir dakika daha pişirin.</li>
+                    <li><strong>Ekmekleri Hazırlayın:</strong> Köfteler pişerken, ekmeklerin iç yüzeylerini aynı tavada, köftelerden kalan yağda <strong>hafifçe kızartın</strong>.</li>
+                    <li><strong>Birleştirme:</strong> Ekmeklerin alt kısmına sos, üzerine marul, domates, soğan ve erimiş peynirli köfteyi koyarak hemen servis yapın.</li>
                 </ol>
             </section>
 
@@ -458,34 +154,34 @@
                 <h2>Malzemeler (4 Hamburger İçin)</h2>
                 <h3>Köfte İçin</h3>
                 <ul>
-                    <li>400 gr **Orta Yağlı Dana Kıyma**</li>
-                    <li>1 adet rendelenmiş **Soğan** (Suyu sıkılmış)</li>
-                    <li>1 tatlı kaşığı **Tuz**</li>
-                    <li>1/2 tatlı kaşığı **Karabiber** ve **Kimyon**</li>
+                    <li>400 gr <strong>Orta Yağlı Dana Kıyma</strong></li>
+                    <li>1 adet rendelenmiş <strong>Soğan</strong> (Suyu sıkılmış)</li>
+                    <li>1 tatlı kaşığı <strong>Tuz</strong></li>
+                    <li>1/2 tatlı kaşığı <strong>Karabiber</strong> ve <strong>Kimyon</strong></li>
                 </ul>
                 <h3>Sosu İçin (Sırrı Bu Sosta!)</h3>
                 <ul>
-                    <li>2 yemek kaşığı **Domates Salçası**</li>
-                    <li>1/2 su bardağı **Sıcak Su**</li>
-                    <li>1 tatlı kaşığı **Kekik**</li>
-                    <li>1/2 çay kaşığı **Şeker**</li>
-                    <li>1 yemek kaşığı **Sıvı Yağ**</li>
+                    <li>2 yemek kaşığı <strong>Domates Salçası</strong></li>
+                    <li>1/2 su bardağı <strong>Sıcak Su</strong></li>
+                    <li>1 tatlı kaşığı <strong>Kekik</strong></li>
+                    <li>1/2 çay kaşığı <strong>Şeker</strong></li>
+                    <li>1 yemek kaşığı <strong>Sıvı Yağ</strong></li>
                 </ul>
                 <h3>Diğer Malzemeler</h3>
                 <ul>
-                    <li>4 adet **Minik Sandviç Ekmeği**</li>
+                    <li>4 adet <strong>Minik Sandviç Ekmeği</strong></li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Köfteleri Hazırlayın:** Malzemeleri karıştırın ve 8 adet ince köfte hazırlayın.</li>
-                    <li>**Sos Hazırlığı:** Yağda salçayı kavurun. Kalan tüm sos malzemelerini ekleyip 5 dakika kısık ateşte kaynatın.</li>
-                    <li>**Pişirme:** Köfteleri az yağda kızartın.</li>
-                    <li>**Islatma İşlemi:** Sandviç ekmeklerini salçalı sosa ve ardından köftelerin yağlı tavasına batırın.</li>
-                    <li>**Birleştirme:** Soslu ekmeğin arasına 2 köfte koyun.</li>
-                    <li>**Buharda Bekletme (Sır):** Hamburgerleri buharda bekletmek için tencereye sıcak su ve üzerine tel ızgara koyun. Hamburgerleri ızgaraya dizin ve kapağını kapatarak **5-10 dakika** buharda bekletin.</li>
+                    <li><strong>Köfteleri Hazırlayın:</strong> Malzemeleri karıştırın ve 8 adet ince köfte hazırlayın.</li>
+                    <li><strong>Sos Hazırlığı:</strong> Yağda salçayı kavurun. Kalan tüm sos malzemelerini ekleyip 5 dakika kısık ateşte kaynatın.</li>
+                    <li><strong>Pişirme:</strong> Köfteleri az yağda kızartın.</li>
+                    <li><strong>Islatma İşlemi:</strong> Sandviç ekmeklerini salçalı sosa ve ardından köftelerin yağlı tavasına batırın.</li>
+                    <li><strong>Birleştirme:</strong> Soslu ekmeğin arasına 2 köfte koyun.</li>
+                    <li><strong>Buharda Bekletme (Sır):</strong> Hamburgerleri buharda bekletmek için tencereye sıcak su ve üzerine tel ızgara koyun. Hamburgerleri ızgaraya dizin ve kapağını kapatarak <strong>5-10 dakika</strong> buharda bekletin.</li>
                 </ol>
             </section>
 
@@ -513,14 +209,14 @@
                 <h2>Malzemeler (4 Burger İçin)</h2>
                 <h3>Tavuk Marinasyonu İçin</h3>
                 <ul>
-                    <li>4 adet **Tavuk Göğsü**</li>
-                    <li>1 su bardağı **Buttermilk**</li>
-                    <li>1 tatlı kaşığı **Toz Kırmızı Biber**, **Sarımsak Tozu**, **Tuz** ve **Karabiber**</li>
+                    <li>4 adet <strong>Tavuk Göğsü</strong></li>
+                    <li>1 su bardağı <strong>Buttermilk</strong></li>
+                    <li>1 tatlı kaşığı <strong>Toz Kırmızı Biber</strong>, <strong>Sarımsak Tozu</strong>, <strong>Tuz</strong> ve <strong>Karabiber</strong></li>
                 </ul>
                 <h3>Kapaklama (Pane) İçin</h3>
                 <ul>
-                    <li>1 su bardağı **Un**</li>
-                    <li>1/2 su bardağı **Mısır Nişastası** (Çıtırlığın sırrı)</li>
+                    <li>1 su bardağı <strong>Un</strong></li>
+                    <li>1/2 su bardağı <strong>Mısır Nişastası</strong> (Çıtırlığın sırrı)</li>
                     <li>Aynı baharatlar: Toz biber, sarımsak tozu, tuz, karabiber</li>
                 </ul>
             </section>
@@ -528,11 +224,11 @@
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Marine Etme:** Tavukları buttermilk ve baharat karışımında buzdolabında **en az 2 saat** marine edin.</li>
-                    <li>**Kapaklama Hazırlığı:** Un, nişasta ve baharatları karıştırın.</li>
-                    <li>**Çift Pane Tekniği:** Tavukları önce kuru un, sonra marine, sonra tekrar kuru un karışımına bulayın.</li>
-                    <li>**Kızartma:** Tavukları bol ve kızgın yağda (yaklaşık 170°C) altın sarısı olana kadar **5-7 dakika** kızartın.</li>
-                    <li>**Servis:** Ekmek arasına (kızartılmış), marul, domates ve sos ile servis edin.</li>
+                    <li><strong>Marine Etme:</strong> Tavukları buttermilk ve baharat karışımında buzdolabında <strong>en az 2 saat</strong> marine edin.</li>
+                    <li><strong>Kapaklama Hazırlığı:</strong> Un, nişasta ve baharatları karıştırın.</li>
+                    <li><strong>Çift Pane Tekniği:</strong> Tavukları önce kuru un, sonra marine, sonra tekrar kuru un karışımına bulayın.</li>
+                    <li><strong>Kızartma:</strong> Tavukları bol ve kızgın yağda (yaklaşık 170°C) altın sarısı olana kadar <strong>5-7 dakika</strong> kızartın.</li>
+                    <li><strong>Servis:</strong> Ekmek arasına (kızartılmış), marul, domates ve sos ile servis edin.</li>
                 </ol>
             </section>
 
@@ -555,13 +251,13 @@
                 <div class="recipe-card">
                     <h2>Karışık Pizza</h2>
                     <p>Sucuk, sosis, mantar ve mısırla zenginleştirilmiş klasik lezzet.</p>
-                    <span class="read-more-button" onclick="showPage('karisik-pizza')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="karisik-pizza">Tarife Git</button>
                 </div>
 
                 <div class="recipe-card">
                     <h2>Margarita Pizza</h2>
                     <p>Sade, ferahlatıcı ve otantik İtalyan klasiği: Domates, Mozzarella, Fesleğen.</p>
-                    <span class="read-more-button" onclick="showPage('margarita-pizza')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="margarita-pizza">Tarife Git</button>
                 </div>
             </div>
         </section>
@@ -584,39 +280,39 @@
                 <h2>Malzemeler</h2>
                 <h3>Hamur İçin</h3>
                 <ul>
-                    <li>3 su bardağı **Un**</li>
-                    <li>1 paket **Kuru Maya**</li>
-                    <li>1 çay kaşığı **Tuz** ve **Şeker**</li>
-                    <li>1 su bardağı **Ilık Su**</li>
-                    <li>3 yemek kaşığı **Zeytinyağı**</li>
+                    <li>3 su bardağı <strong>Un</strong></li>
+                    <li>1 paket <strong>Kuru Maya</strong></li>
+                    <li>1 çay kaşığı <strong>Tuz</strong> ve <strong>Şeker</strong></li>
+                    <li>1 su bardağı <strong>Ilık Su</strong></li>
+                    <li>3 yemek kaşığı <strong>Zeytinyağı</strong></li>
                 </ul>
                 <h3>Sos ve Üst Malzeme İçin</h3>
                 <ul>
-                    <li>1 su bardağı **Pizza Sosu**</li>
-                    <li>300 gr rendelenmiş **Mozzarella Peyniri** ve **Kaşar Peyniri** karışımı</li>
-                    <li>8 dilim **Sucuk**</li>
-                    <li>8 dilim **Sosis**</li>
-                    <li>1/2 su bardağı **Mantar**</li>
-                    <li>1/2 su bardağı **Mısır**</li>
-                    <li>**Zeytin** (İsteğe bağlı)</li>
+                    <li>1 su bardağı <strong>Pizza Sosu</strong></li>
+                    <li>300 gr rendelenmiş <strong>Mozzarella Peyniri</strong> ve <strong>Kaşar Peyniri</strong> karışımı</li>
+                    <li>8 dilim <strong>Sucuk</strong></li>
+                    <li>8 dilim <strong>Sosis</strong></li>
+                    <li>1/2 su bardağı <strong>Mantar</strong></li>
+                    <li>1/2 su bardağı <strong>Mısır</strong></li>
+                    <li><strong>Zeytin</strong> (İsteğe bağlı)</li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Hamur:** Mayayı, su ve şekerle aktifleştirin. Kalan malzemelerle yumuşak bir hamur yoğurun ve 45-60 dakika mayalanmaya bırakın.</li>
-                    <li>**Fırını Hazırlama:** Fırını en yüksek sıcaklığa (**250°C**) ısıtın.</li>
-                    <li>**Hamuru Açma:** Mayalanan hamuru açın ve tepsiye yerleştirin.</li>
-                    <li>**Sosu Sürme:** Hamurun kenarlarında boşluk bırakarak pizza sosunu yayın.</li>
-                    <li>**Peynir ve Üst Malzeme:** Önce peynirin yarısını serpin. Üzerine sucuk, sosis, mantar, mısır ve zeytinleri yerleştirin. Kalan peyniri en üste serpin.</li>
-                    <li>**Pişirme:** Pizzayı önceden ısıtılmış fırında yaklaşık **10-15 dakika** pişirin.</li>
+                    <li><strong>Hamur:</strong> Mayayı, su ve şekerle aktifleştirin. Kalan malzemelerle yumuşak bir hamur yoğurun ve 45-60 dakika mayalanmaya bırakın.</li>
+                    <li><strong>Fırını Hazırlama:</strong> Fırını en yüksek sıcaklığa (<strong>250°C</strong>) ısıtın.</li>
+                    <li><strong>Hamuru Açma:</strong> Mayalanan hamuru açın ve tepsiye yerleştirin.</li>
+                    <li><strong>Sosu Sürme:</strong> Hamurun kenarlarında boşluk bırakarak pizza sosunu yayın.</li>
+                    <li><strong>Peynir ve Üst Malzeme:</strong> Önce peynirin yarısını serpin. Üzerine sucuk, sosis, mantar, mısır ve zeytinleri yerleştirin. Kalan peyniri en üste serpin.</li>
+                    <li><strong>Pişirme:</strong> Pizzayı önceden ısıtılmış fırında yaklaşık <strong>10-15 dakika</strong> pişirin.</li>
                 </ol>
             </section>
 
             <section class="chef-note">
                 <h3>Umut Şef'in İpucu:</h3>
-                <p>Mükemmel çıtır kenarlar için, hamurunuzu tepsiye koymadan önce altına biraz **mısır unu** serpin.</p>
+                <p>Mükemmel çıtır kenarlar için, hamurunuzu tepsiye koymadan önce altına biraz <strong>mısır unu</strong> serpin.</p>
             </section>
         </section>
     </main>
@@ -642,22 +338,22 @@
                 </ul>
                 <h3>Sos ve Üst Malzeme İçin (Az ama Öz!)</h3>
                 <ul>
-                    <li>1 su bardağı **Ev Yapımı Domates Sosu**</li>
-                    <li>200 gr **Taze Mozzarella Peyniri**</li>
-                    <li>1 demet **Taze Fesleğen Yaprağı**</li>
-                    <li>Bir tutam **Kaya Tuzu**</li>
-                    <li>Bir miktar **Sızma Zeytinyağı** (Pişirme sonrası için)</li>
+                    <li>1 su bardağı <strong>Ev Yapımı Domates Sosu</strong></li>
+                    <li>200 gr <strong>Taze Mozzarella Peyniri</strong></li>
+                    <li>1 demet <strong>Taze Fesleğen Yaprağı</strong></li>
+                    <li>Bir tutam <strong>Kaya Tuzu</strong></li>
+                    <li>Bir miktar <strong>Sızma Zeytinyağı</strong> (Pişirme sonrası için)</li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Hamur:** Hamuru hazırlayın ve açın.</li>
-                    <li>**Fırını Hazırlama:** Fırını en yüksek sıcaklıkta (**250°C**) önceden ısıtın.</li>
-                    <li>**Sosu Uygulama:** Hamurun üzerine sadece domates sosunu ince bir katman halinde yayın.</li>
-                    <li>**Peynir ve Pişirme:** Taze Mozzarella peynirini parçalara ayırın ve sosun üzerine yerleştirin. Fırında **10-12 dakika** pişirin.</li>
-                    <li>**Son Dokunuş:** Fırından çıkan sıcak pizzanın üzerine hemen taze fesleğen yapraklarını serpiştirin ve zeytinyağı gezdirin.</li>
+                    <li><strong>Hamur:</strong> Hamuru hazırlayın ve açın.</li>
+                    <li><strong>Fırını Hazırlama:</strong> Fırını en yüksek sıcaklıkta (<strong>250°C</strong>) önceden ısıtın.</li>
+                    <li><strong>Sosu Uygulama:</strong> Hamurun üzerine sadece domates sosunu ince bir katman halinde yayın.</li>
+                    <li><strong>Peynir ve Pişirme:</strong> Taze Mozzarella peynirini parçalara ayırın ve sosun üzerine yerleştirin. Fırında <strong>10-12 dakika</strong> pişirin.</li>
+                    <li><strong>Son Dokunuş:</strong> Fırından çıkan sıcak pizzanın üzerine hemen taze fesleğen yapraklarını serpiştirin ve zeytinyağı gezdirin.</li>
                 </ol>
             </section>
 
@@ -675,9 +371,9 @@
             <section class="chef-story">
                 <img src="images/umut-sef.jpg" alt="Şef Umut'un Portresi" class="recipe-image" style="max-height: 250px; width: 300px; display: block; margin: 0 auto 30px auto;">
                 
-                <p>Umut Şef'in Fast Food Evi fikri, bizzat **Umut Şef Okulu'nda** ders çalışırken doğdu. Şefimiz, öğrencilerin ve gençlerin sürekli olarak yüksek fiyatlar ödeyerek, çoğu zaman ne içerdiğini bilmedikleri sağlıksız fast food ürünlerini tükettiğini gözlemledi.</p>
+                <p>Umut Şef'in Fast Food Evi fikri, bizzat <strong>Umut Şef Okulu'nda</strong> ders çalışırken doğdu. Şefimiz, öğrencilerin ve gençlerin sürekli olarak yüksek fiyatlar ödeyerek, çoğu zaman ne içerdiğini bilmedikleri sağlıksız fast food ürünlerini tükettiğini gözlemledi.</p>
                 
-                <p>O an aklına şu fikir geldi: **"Neden herkesin yararlanabileceği, kaliteli ve sağlıklı yemekleri evde yapmalarını sağlayacak bir site oluşturmayayım?"** Bu amaçla yola çıkarak, gençlerin en çok tükettiği fast food ürünlerini seçti ve bu siteyi kurdu. Temel hedefi; insanların çok para verip sağlıksız yemekler yemesini engellemek ve herkesin kendi mutfağında, profesyonel tekniklerle temiz ve lezzetli yemekler yapmasını sağlamaktır.</p>
+                <p>O an aklına şu fikir geldi: <strong>"Neden herkesin yararlanabileceği, kaliteli ve sağlıklı yemekleri evde yapmalarını sağlayacak bir site oluşturmayayım?"</strong> Bu amaçla yola çıkarak, gençlerin en çok tükettiği fast food ürünlerini seçti ve bu siteyi kurdu. Temel hedefi; insanların çok para verip sağlıksız yemekler yemesini engellemek ve herkesin kendi mutfağında, profesyonel tekniklerle temiz ve lezzetli yemekler yapmasını sağlamaktır.</p>
             </section>
         </section>
     </main>
@@ -694,19 +390,19 @@
                 <div class="recipe-card">
                     <h2>Çıtır Patates Kızartması</h2>
                     <p>Mükemmel çıtırlık için çift kızartma tekniği.</p>
-                    <span class="read-more-button" onclick="showPage('cips')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="cips">Tarife Git</button>
                 </div>
 
                 <div class="recipe-card">
                     <h2>Ev Yapımı Tavuk Nuggets</h2>
                     <p>Sağlıklı, lezzetli ve çıtır çıtır atıştırmalıklar.</p>
-                    <span class="read-more-button" onclick="showPage('nuggets')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="nuggets">Tarife Git</button>
                 </div>
 
                 <div class="recipe-card">
                     <h2>Tatlılar & İçecekler</h2>
                     <p>Milkshake ve diğer serinletici tatlı lezzetleri keşfet.</p>
-                    <span class="read-more-button" onclick="showPage('desserts-collection')">Menüye Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="desserts-collection">Menüye Git</button>
                 </div>
                 </div>
         </section>
@@ -728,23 +424,23 @@
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
                 <ul>
-                    <li>4-5 adet **Russet Tipi Patates**</li>
-                    <li>2 yemek kaşığı **Beyaz Sirke**</li>
-                    <li>**Kaya Tuzu**</li>
-                    <li>Kızartmak için bol **Sıvı Yağ**</li>
+                    <li>4-5 adet <strong>Russet Tipi Patates</strong></li>
+                    <li>2 yemek kaşığı <strong>Beyaz Sirke</strong></li>
+                    <li><strong>Kaya Tuzu</strong></li>
+                    <li>Kızartmak için bol <strong>Sıvı Yağ</strong></li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı (Çift Kızartma Tekniği)</h2>
                 <ol>
-                    <li>**Kesim:** Patatesleri soyun ve yaklaşık **1 cm kalınlığında** kesin.</li>
-                    <li>**Nişasta Giderme (Sır):** Patatesleri soğuk su dolu bir kapta **en az 30 dakika** bekletin. İyice kurulayın.</li>
-                    <li>**Haşlama:** Kaynar suya sirkeyi ekleyip patatesleri sadece **2 dakika** haşlayın. Hemen sudan çıkarın ve soğutun.</li>
-                    <li>**Soğutma:** Haşladığınız patatesleri bir tepsiye yayın ve **buzdolabında veya dondurucuda 10 dakika** tamamen soğutun.</li>
-                    <li>**1. Kızartma (Pişirme):** Yağı **130-140°C**'ye ısıtın. Patatesleri yumuşayana kadar yaklaşık **5-7 dakika** kızartın. Yağdan çıkarıp tamamen soğutun.</li>
-                    <li>**2. Kızartma (Çıtırlık):** Yağı **180-190°C**'ye kadar ısıtın. Soğuk patatesleri ikinci kez, **altın rengi ve çıtır** olana kadar **2-4 dakika** kızartın.</li>
-                    <li>**Servis:** Yağını süzün, hemen kaya tuzuyla tuzlayın ve sıcak servis yapın.</li>
+                    <li><strong>Kesim:</strong> Patatesleri soyun ve yaklaşık <strong>1 cm kalınlığında</strong> kesin.</li>
+                    <li><strong>Nişasta Giderme (Sır):</strong> Patatesleri soğuk su dolu bir kapta <strong>en az 30 dakika</strong> bekletin. İyice kurulayın.</li>
+                    <li><strong>Haşlama:</strong> Kaynar suya sirkeyi ekleyip patatesleri sadece <strong>2 dakika</strong> haşlayın. Hemen sudan çıkarın ve soğutun.</li>
+                    <li><strong>Soğutma:</strong> Haşladığınız patatesleri bir tepsiye yayın ve <strong>buzdolabında veya dondurucuda 10 dakika</strong> tamamen soğutun.</li>
+                    <li><strong>1. Kızartma (Pişirme):</strong> Yağı <strong>130-140°C</strong>'ye ısıtın. Patatesleri yumuşayana kadar yaklaşık <strong>5-7 dakika</strong> kızartın. Yağdan çıkarıp tamamen soğutun.</li>
+                    <li><strong>2. Kızartma (Çıtırlık):</strong> Yağı <strong>180-190°C</strong>'ye kadar ısıtın. Soğuk patatesleri ikinci kez, <strong>altın rengi ve çıtır</strong> olana kadar <strong>2-4 dakika</strong> kızartın.</li>
+                    <li><strong>Servis:</strong> Yağını süzün, hemen kaya tuzuyla tuzlayın ve sıcak servis yapın.</li>
                 </ol>
             </section>
 
@@ -772,27 +468,27 @@
                 <h2>Malzemeler</h2>
                 <h3>Nuggets İçin</h3>
                 <ul>
-                    <li>500 gr **Tavuk Göğsü** (Kuşbaşı doğranmış)</li>
-                    <li>1/2 çay bardağı **Süt**</li>
-                    <li>1 çay kaşığı **Sarımsak Tozu** ve **Soğan Tozu**</li>
+                    <li>500 gr <strong>Tavuk Göğsü</strong> (Kuşbaşı doğranmış)</li>
+                    <li>1/2 çay bardağı <strong>Süt</strong></li>
+                    <li>1 çay kaşığı <strong>Sarımsak Tozu</strong> ve <strong>Soğan Tozu</strong></li>
                     <li>Tuz ve Karabiber</li>
                 </ul>
                 <h3>Kapaklama (Pane) İçin</h3>
                 <ul>
-                    <li>1 su bardağı **Un**</li>
-                    <li>1 adet **Yumurta** (çırpılmış)</li>
-                    <li>1 su bardağı **Galeta Unu** (veya Panko)</li>
+                    <li>1 su bardağı <strong>Un</strong></li>
+                    <li>1 adet <strong>Yumurta</strong> (çırpılmış)</li>
+                    <li>1 su bardağı <strong>Galeta Unu</strong> (veya Panko)</li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Tavuk Harcı:** Tavuk, süt ve baharatları blendera koyun ve macun kıvamına gelene kadar karıştırın.</li>
-                    <li>**Şekil Verme:** Harca küçük nugget şekilleri verin.</li>
-                    <li>**Kapaklama (3 Aşamalı):** Nuggets'ları sırasıyla: Un, Yumurta ve Galeta Unu'na bulayın.</li>
-                    <li>**Kızartma/Pişirme:** Bol ve kızgın yağda (175°C) altın sarısı olana kadar **3-4 dakika** kızartın VEYA 200°C fırında **15-20 dakika** pişirin.</li>
-                    <li>**Servis:** Sıcak olarak hardal, ketçap veya sos ile servis edin.</li>
+                    <li><strong>Tavuk Harcı:</strong> Tavuk, süt ve baharatları blendera koyun ve macun kıvamına gelene kadar karıştırın.</li>
+                    <li><strong>Şekil Verme:</strong> Harca küçük nugget şekilleri verin.</li>
+                    <li><strong>Kapaklama (3 Aşamalı):</strong> Nuggets'ları sırasıyla: Un, Yumurta ve Galeta Unu'na bulayın.</li>
+                    <li><strong>Kızartma/Pişirme:</strong> Bol ve kızgın yağda (175°C) altın sarısı olana kadar <strong>3-4 dakika</strong> kızartın VEYA 200°C fırında <strong>15-20 dakika</strong> pişirin.</li>
+                    <li><strong>Servis:</strong> Sıcak olarak hardal, ketçap veya sos ile servis edin.</li>
                 </ol>
             </section>
 
@@ -815,19 +511,19 @@
                 <div class="recipe-card">
                     <h2>Çikolatalı Sufle</h2>
                     <p>İçinden akışkan çikolatanın çıktığı efsanevi tatlı.</p>
-                    <span class="read-more-button" onclick="showPage('sufle')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="sufle">Tarife Git</button>
                 </div>
 
                 <div class="recipe-card">
                     <h2>Ev Yapımı Vanilyalı Milkshake</h2>
                     <p>Klasik fast food lezzeti: Yoğun, soğuk ve kremsi.</p>
-                    <span class="read-more-button" onclick="showPage('milkshake')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="milkshake">Tarife Git</button>
                 </div>
 
                 <div class="recipe-card">
                     <h2>Serinletici Cool Lime</h2>
                     <p>Yaz aylarının favorisi, ev yapımı nane ve limonlu içecek.</p>
-                    <span class="read-more-button" onclick="showPage('cool-lime')">Tarife Git</span>
+                    <button type="button" class="read-more-button navigate-button" data-page="cool-lime">Tarife Git</button>
                 </div>
             </div>
         </section>
@@ -849,26 +545,26 @@
             <section class="ingredients-section">
                 <h2>Malzemeler</h2>
                 <ul>
-                    <li>4 top **Kaliteli Vanilyalı Dondurma**</li>
-                    <li>1/2 su bardağı **Soğuk Süt**</li>
-                    <li>1 çay kaşığı **Saf Vanilya Ekstraktı** (Opsiyonel)</li>
-                    <li>**Krema ve Kiraz** (Üzeri için, isteğe bağlı)</li>
+                    <li>4 top <strong>Kaliteli Vanilyalı Dondurma</strong></li>
+                    <li>1/2 su bardağı <strong>Soğuk Süt</strong></li>
+                    <li>1 çay kaşığı <strong>Saf Vanilya Ekstraktı</strong> (Opsiyonel)</li>
+                    <li><strong>Krema ve Kiraz</strong> (Üzeri için, isteğe bağlı)</li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Hazırlık:** Tüm malzemelerin çok soğuk olduğundan emin olun.</li>
-                    <li>**Blender:** Dondurma, süt ve vanilya ekstraktını blendera koyun.</li>
-                    <li>**Karıştırma:** Karışım kremsi, pürüzsüz ve yoğun bir kıvam alana kadar, **yüksek hızda** karıştırın.</li>
-                    <li>**Servis:** Uzun bir bardağa dökün. Üzerini çırpılmış krema ve bir adet kiraz ile süsleyerek hemen servis yapın.</li>
+                    <li><strong>Hazırlık:</strong> Tüm malzemelerin çok soğuk olduğundan emin olun.</li>
+                    <li><strong>Blender:</strong> Dondurma, süt ve vanilya ekstraktını blendera koyun.</li>
+                    <li><strong>Karıştırma:</strong> Karışım kremsi, pürüzsüz ve yoğun bir kıvam alana kadar, <strong>yüksek hızda</strong> karıştırın.</li>
+                    <li><strong>Servis:</strong> Uzun bir bardağa dökün. Üzerini çırpılmış krema ve bir adet kiraz ile süsleyerek hemen servis yapın.</li>
                 </ol>
             </section>
 
             <section class="chef-note">
                 <h3>Umut Şef'in İpucu:</h3>
-                <p>Daha yoğun bir kıvam için süt yerine **yarım dondurulmuş krema** kullanabilirsiniz.</p>
+                <p>Daha yoğun bir kıvam için süt yerine <strong>yarım dondurulmuş krema</strong> kullanabilirsiniz.</p>
             </section>
         </section>
     </main>
@@ -889,31 +585,31 @@
             <section class="ingredients-section">
                 <h2>Malzemeler (4 Sufle Kabı İçin)</h2>
                 <ul>
-                    <li>100 gr **Bitter Çikolata**</li>
-                    <li>50 gr **Tereyağı**</li>
-                    <li>2 adet **Yumurta** (Oda sıcaklığında)</li>
-                    <li>2 yemek kaşığı **Şeker**</li>
-                    <li>2 yemek kaşığı **Un**</li>
-                    <li>**Tuz** (Bir tutam)</li>
-                    <li>Kalıpları yağlamak ve unlamak için **Tereyağı** ve **Kakao Tozu**</li>
+                    <li>100 gr <strong>Bitter Çikolata</strong></li>
+                    <li>50 gr <strong>Tereyağı</strong></li>
+                    <li>2 adet <strong>Yumurta</strong> (Oda sıcaklığında)</li>
+                    <li>2 yemek kaşığı <strong>Şeker</strong></li>
+                    <li>2 yemek kaşığı <strong>Un</strong></li>
+                    <li><strong>Tuz</strong> (Bir tutam)</li>
+                    <li>Kalıpları yağlamak ve unlamak için <strong>Tereyağı</strong> ve <strong>Kakao Tozu</strong></li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Kalıpları Hazırlama:** 4 adet sufle kabının içini yağlayın ve **kakao tozu** ile kaplayın.</li>
-                    <li>**Çikolata Karışımı:** Çikolata ve tereyağını benmari usulü eritin. Hafifçe soğutun.</li>
-                    <li>**Yumurta Karışımı:** Yumurtaları, şekeri ve tuzu köpürene kadar çırpın.</li>
-                    <li>**Birleştirme:** Eritilmiş çikolata karışımını yumurtalı karışıma yavaşça ekleyin. Unu eleyerek ekleyip karıştırın.</li>
-                    <li>**Pişirme:** Hazırlanan hamuru kaplara paylaştırın. Önceden ısıtılmış **200°C** fırında **10-12 dakika** pişirin.</li>
-                    <li>**Akışkanlık Kontrolü:** Suflelerin kenarları sertleşip ortası hala sallanıyorsa hazırdır. Hemen servis edin.</li>
+                    <li><strong>Kalıpları Hazırlama:</strong> 4 adet sufle kabının içini yağlayın ve <strong>kakao tozu</strong> ile kaplayın.</li>
+                    <li><strong>Çikolata Karışımı:</strong> Çikolata ve tereyağını benmari usulü eritin. Hafifçe soğutun.</li>
+                    <li><strong>Yumurta Karışımı:</strong> Yumurtaları, şekeri ve tuzu köpürene kadar çırpın.</li>
+                    <li><strong>Birleştirme:</strong> Eritilmiş çikolata karışımını yumurtalı karışıma yavaşça ekleyin. Unu eleyerek ekleyip karıştırın.</li>
+                    <li><strong>Pişirme:</strong> Hazırlanan hamuru kaplara paylaştırın. Önceden ısıtılmış <strong>200°C</strong> fırında <strong>10-12 dakika</strong> pişirin.</li>
+                    <li><strong>Akışkanlık Kontrolü:</strong> Suflelerin kenarları sertleşip ortası hala sallanıyorsa hazırdır. Hemen servis edin.</li>
                 </ol>
             </section>
 
             <section class="chef-note">
                 <h3>Umut Şef'in İpucu:</h3>
-                <p>Daha garantili akışkanlık için, kaplara hamuru koyduktan sonra, tam ortaya bir parça **donmuş bitter çikolata** gömün.</p>
+                <p>Daha garantili akışkanlık için, kaplara hamuru koyduktan sonra, tam ortaya bir parça <strong>donmuş bitter çikolata</strong> gömün.</p>
             </section>
         </main>
     
@@ -934,26 +630,26 @@
                 <h2>Malzemeler</h2>
                 <h3>Şurup İçin</h3>
                 <ul>
-                    <li>1 su bardağı **Su**</li>
-                    <li>1 su bardağı **Toz Şeker**</li>
-                    <li>1 demet **Taze Nane Yaprağı**</li>
-                    <li>1 adet **Misket Limonu Kabuğu Rendesi**</li>
+                    <li>1 su bardağı <strong>Su</strong></li>
+                    <li>1 su bardağı <strong>Toz Şeker</strong></li>
+                    <li>1 demet <strong>Taze Nane Yaprağı</strong></li>
+                    <li>1 adet <strong>Misket Limonu Kabuğu Rendesi</strong></li>
                 </ul>
                 <h3>İçecek İçin</h3>
                 <ul>
-                    <li>1 su bardağı **Taze Misket Limonu Suyu**</li>
-                    <li>5-6 su bardağı **Soğuk Su** veya **Sade Soda**</li>
-                    <li>**Buz Küpleri** ve **Limon Dilimleri** (Servis için)</li>
+                    <li>1 su bardağı <strong>Taze Misket Limonu Suyu</strong></li>
+                    <li>5-6 su bardağı <strong>Soğuk Su</strong> veya <strong>Sade Soda</strong></li>
+                    <li><strong>Buz Küpleri</strong> ve <strong>Limon Dilimleri</strong> (Servis için)</li>
                 </ul>
             </section>
             
             <section class="instructions-section">
                 <h2>Adım Adım Yapılışı</h2>
                 <ol>
-                    <li>**Nane Şurubunu Hazırlama:** Su ve şekeri ısıtıp eritin. Ocağın altını kapatın. İçine nane yapraklarını ve limon kabuğu rendesini ekleyip **15 dakika** demleyin.</li>
-                    <li>**Süzme ve Soğutma:** Şurubu süzün ve buzdolabında **tamamen soğutun**.</li>
-                    <li>**Karıştırma:** Soğumuş şurubu, taze sıkılmış misket limonu suyu ile birleştirin.</li>
-                    <li>**Servis:** Sürahiye konsantre karışımı dökün. Üzerine 5-6 su bardağı soğuk su (veya soda) ekleyerek karıştırın. Bol buzla servis edin.</li>
+                    <li><strong>Nane Şurubunu Hazırlama:</strong> Su ve şekeri ısıtıp eritin. Ocağın altını kapatın. İçine nane yapraklarını ve limon kabuğu rendesini ekleyip <strong>15 dakika</strong> demleyin.</li>
+                    <li><strong>Süzme ve Soğutma:</strong> Şurubu süzün ve buzdolabında <strong>tamamen soğutun</strong>.</li>
+                    <li><strong>Karıştırma:</strong> Soğumuş şurubu, taze sıkılmış misket limonu suyu ile birleştirin.</li>
+                    <li><strong>Servis:</strong> Sürahiye konsantre karışımı dökün. Üzerine 5-6 su bardağı soğuk su (veya soda) ekleyerek karıştırın. Bol buzla servis edin.</li>
                 </ol>
             </section>
 
@@ -972,21 +668,21 @@
             <div class="faq-section">
                 
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer(this)">1. Bu siteyi/tarifleri kim hazırladı?</div>
+                    <button type="button" class="faq-question" aria-expanded="false">1. Bu siteyi/tarifleri kim hazırladı?</button>
                     <div class="faq-answer" style="display:none;">
-                        Bu lezzetli tarifler ve web sitesi içeriği, şef **Umut Kardaş** ve onun mutfak profesyonellerinden oluşan **ekibi** tarafından hazırlanmıştır. Amacımız, en iyi fast food lezzetlerini ev mutfaklarına taşımaktır.
+                        Bu lezzetli tarifler ve web sitesi içeriği, şef <strong>Umut Kardaş</strong> ve onun mutfak profesyonellerinden oluşan <strong>ekibi</strong> tarafından hazırlanmıştır. Amacımız, en iyi fast food lezzetlerini ev mutfaklarına taşımaktır.
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer(this)">2. Tarifleriniz neden evde yapılmaya uygun?</div>
+                    <button type="button" class="faq-question" aria-expanded="false">2. Tarifleriniz neden evde yapılmaya uygun?</button>
                     <div class="faq-answer" style="display:none;">
                         Tariflerimiz, profesyonel restoran tekniklerini temel alarak, evde kolayca bulunabilen malzemelerle ve temel mutfak ekipmanlarıyla uygulanabilir şekilde basitleştirilmiştir.
                     </div>
                 </div>
                 
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer(this)">3. Tariflerdeki porsiyonları nasıl ayarlamalıyım?</div>
+                    <button type="button" class="faq-question" aria-expanded="false">3. Tariflerdeki porsiyonları nasıl ayarlamalıyım?</button>
                     <div class="faq-answer" style="display:none;">
                         Her tarifin üzerinde belirtilen porsiyon sayısı ortalama değerlerdir. Malzemeleri porsiyon sayısıyla orantılı olarak artırıp azaltarak, misafir sayınıza göre ayarlayabilirsiniz.
                     </div>
@@ -999,22 +695,20 @@
     <main id="membership" class="page-content">
         <section class="recipe-container">
             <h1>Umut Şef Premium Üyelik</h1>
-            <p class="intro-text">Tarif güncellemelerinden, özel ipuçlarından ve şefin canlı yayınlarından haberdar olmak için hemen ücretsiz üye olun! **(Başvurunuz doğrudan Google E-Tablolar'a kaydedilecektir.)**</p>
+            <p class="intro-text">Tarif güncellemelerinden, özel ipuçlarından ve şefin canlı yayınlarından haberdar olmak için hemen ücretsiz üye olun! <strong>(Başvurunuz doğrudan Google E-Tablolar'a kaydedilecektir.)</strong></p>
             
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW9CbPzwJidu6dvli8ge6-v796aB5vr30zeGXbMMNLZ1IfPw/viewform?embedded=true" 
                     width="100%" 
                     height="853px" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0">
+                    style="border:0;" title="Umut Şef Üyelik Formu">
                 Yükleniyor…
             </iframe>
             
             <section class="chef-note" style="margin-top: 30px;">
                 <h3>Önemli Not:</h3>
-                <p>Bu form aracılığıyla yapılan tüm başvurular doğrudan Umut Şef'in **Google E-Tablolar**'ına kaydedilmektedir. Başvurularınızın durumunu veya detaylarını görmek için lütfen Yönetici Linkini kullanın.</p>
+                <p>Bu form aracılığıyla yapılan tüm başvurular doğrudan Umut Şef'in <strong>Google E-Tablolar</strong>'ına kaydedilmektedir. Başvurularınızın durumunu veya detaylarını görmek için lütfen Yönetici Linkini kullanın.</p>
                 
-                <a onclick="showPage('admin-panel')" class="admin-link" style="text-align: center; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 15px 0;">
+                <a href="#admin-panel" data-page="admin-panel" class="admin-link" style="text-align: center; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 15px 0;">
                     Tüm Üye Başvurularını Görüntüle (Yönetici Girişi)
                 </a>
             </section>
@@ -1028,7 +722,7 @@
             
             <div id="admin-login">
                 <h2>Yönetici Girişi Gereklidir</h2>
-                <form id="adminLoginForm" onsubmit="return loginAdmin(event)" class="login-form">
+                <form id="adminLoginForm" class="login-form">
                     <p>Lütfen yönetici şifrenizi girin:</p>
                     <input type="password" id="adminPassword" placeholder="Şifre" required>
                     <button type="submit" class="login-button">Giriş Yap</button>
@@ -1038,102 +732,26 @@
             
             <div id="admin-content" style="display: none;" class="admin-panel-content">
                 <h2>Üyelik Başvurularını Görüntüle</h2>
-                <p>Tüm üyelik başvuruları Google Formlar üzerinden alınmakta ve **Google E-Tablolar** üzerinde merkezi olarak tutulmaktadır. Aşağıdaki butona tıklayarak güncel listeye güvenli bir şekilde ulaşabilirsiniz.</p>
+                <p>Tüm üyelik başvuruları Google Formlar üzerinden alınmakta ve <strong>Google E-Tablolar</strong> üzerinde merkezi olarak tutulmaktadır. Aşağıdaki butona tıklayarak güncel listeye güvenli bir şekilde ulaşabilirsiniz.</p>
                 
                 <a href="https://docs.google.com/spreadsheets/d/1-nepX5lzeEO4y6vmUw83syzYj_jYlIbrU6pP0xs0vaE/edit?usp=sharing" target="_blank">
                     Google E-Tablolardaki Üye Listesine Git
                 </a>
 
                 <p style="margin-top: 40px; color: #cc0000; font-weight: bold;">
-                    **HATIRLATMA:** E-Tablolara erişmek için Google hesabınızla giriş yapmış olmanız ve E-Tabloların paylaşım ayarlarının doğru olması gerekmektedir.
+                    <strong>HATIRLATMA:</strong> E-Tablolara erişmek için Google hesabınızla giriş yapmış olmanız ve E-Tabloların paylaşım ayarlarının doğru olması gerekmektedir.
                 </p>
             </div>
             
         </section>
     </main>
 
-
-    
-    <script>
-        // YÖNETİCİ ŞİFRESİ
-        const ADMIN_PASSWORD = '512131'; 
-
-        // Sayfa gösterim fonksiyonu
-        function showPage(id) {
-            // Tüm sayfa içeriklerini gizle
-            document.querySelectorAll('.page-content').forEach(function(content) {
-                content.classList.remove('active');
-            });
-            
-            // İstenen içeriği göster
-            document.getElementById(id).classList.add('active');
-
-            // Yönetici paneli açılırsa, login formunu göster, içeriği gizle
-            if (id === 'admin-panel') {
-                document.getElementById('admin-login').style.display = 'block';
-                document.getElementById('admin-content').style.display = 'none';
-                document.getElementById('adminPassword').value = ''; // Şifre alanını temizle
-                document.getElementById('adminMessage').style.display = 'none'; // Mesajı gizle
-            }
-            
-            // Sayfanın en üstüne kaydır
-            window.scrollTo(0, 0); 
-        }
-        
-        // Yönetici girişi kontrol fonksiyonu
-        function loginAdmin(event) {
-            event.preventDefault(); 
-            const passwordInput = document.getElementById('adminPassword');
-            const messageDiv = document.getElementById('adminMessage');
-            const enteredPassword = passwordInput.value.trim();
-
-            if (enteredPassword === ADMIN_PASSWORD) {
-                // Şifre doğruysa
-                messageDiv.className = 'success';
-                messageDiv.textContent = 'Giriş başarılı! Yönetici paneline yönlendiriliyorsunuz...';
-                messageDiv.style.display = 'block';
-                
-                // Login alanını gizle, yönetici içeriğini göster
-                document.getElementById('admin-login').style.display = 'none';
-                document.getElementById('admin-content').style.display = 'block';
-
-            } else {
-                // Şifre yanlışsa
-                messageDiv.className = 'error';
-                messageDiv.textContent = 'Hata: Yanlış şifre. Lütfen tekrar deneyin.';
-                messageDiv.style.display = 'block';
-                passwordInput.value = ''; // Şifreyi temizle
-            }
-
-            return false; // Formun gönderimini durdur
-        }
-
-        // SSS (FAQ) cevaplarını gösterme/gizleme fonksiyonu 
-        function toggleAnswer(element) {
-            const answer = element.nextElementSibling;
-            
-            if (answer.style.display === 'block') {
-                answer.style.display = 'none';
-            } else {
-                document.querySelectorAll('.faq-answer').forEach(function(ans) {
-                    if (ans !== answer) {
-                        ans.style.display = 'none';
-                    }
-                });
-                answer.style.display = 'block';
-            }
-        }
-
-        // Sayfa yüklendiğinde varsayılan olarak Anasayfa'yı göster
-        document.addEventListener('DOMContentLoaded', () => {
-             const initialPage = window.location.hash ? window.location.hash.substring(1) : 'home';
-             showPage(initialPage);
-        });
-    </script>
-    
     <footer>
         <p>Herhangi bir sorun, öneri veya telif hakkı ihlali durumunda iletişime geçebilirsiniz:</p>
-        <p>E-posta: **umutsefinfastfoodevi01@gmail.com**</p>
-        <p>&copy; 2024 Umut Şef'in Fast Food Evi. Tüm Hakları Saklıdır.<
+        <p>E-posta: <strong>umutsefinfastfoodevi01@gmail.com</strong></p>
+        <p>&copy; 2024 Umut Şef'in Fast Food Evi. Tüm Hakları Saklıdır.</p>
+    </footer>
 
-
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER VE NAVİGASYON (DESKTOP) */
+header {
+    background-color: #e51d2c;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    flex-wrap: wrap; 
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+/* Yönetici Paneli Linkine Özel Stil */
+nav a.admin-link {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Yönetici Paneli Linkinin Hover Stili */
+nav a.admin-link:hover {
+    background-color: #e51d2c;
+    color: white;
+}
+
+/* Sayfa İçerik Konteyneri (Tüm Görünümler) */
+.page-content {
+    display: none;
+}
+
+.page-content.active {
+    display: block;
+}
+
+/* ANA İÇERİK VE TARİF YAPISI */
+.recipe-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Yeni eklenen resim stili */
+.recipe-image {
+    width: 100%; 
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 30px; 
+}
+
+
+h1 {
+    color: #e51d2c;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    color: #333;
+    margin-top: 35px;
+    font-size: 1.8em;
+    border-left: 5px solid #ffcc00;
+    padding-left: 10px;
+}
+
+/* GÖRSEL ALANLARI İÇİN YER TUTUCU STİLİ */
+.image-placeholder {
+    height: 200px; 
+    background-color: #eee; 
+    border: 1px dashed #ccc; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    color: #666;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* BURGERLER VE ATIŞTIRMALIKLAR SAYFALARI İÇİN KART YAPISI */
+.recipe-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.recipe-card h2 {
+    color: #333;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border-bottom: 2px solid #f4f4f4;
+    margin-top: 0;
+}
+
+.read-more-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 25px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* YÖNETİCİ PANELİ İÇİN ÖZEL STİL */
+.admin-panel-content {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Yönetici Login Formu Stilleri */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.login-button {
+    background-color: #e51d2c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+     background-color: #ffcc00;
+     color: #333;
+}
+
+/* Admin Linki Butonu */
+.admin-panel-content a {
+    display: inline-block;
+    background-color: #e51d2c;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.admin-panel-content a:hover {
+     background-color: #ffcc00;
+     color: #333;
+}
+
+/* Mesaj Stilleri */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: none;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.error {
+    background-color: #fdd;
+    color: #e51d2c;
+    border: 1px solid #e51d2c;
+}
+.success {
+    background-color: #dfd;
+    color: #388e3c;
+    border: 1px solid #388e3c;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* MOBİL UYUMLULUK (MEDIA QUERIES) */
+@media (max-width: 768px) {
+    .recipe-container {
+        margin: 15px;
+        padding: 20px;
+    }
+    header {
+        flex-direction: column; 
+        padding: 15px 20px;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-bottom: 10px; 
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    nav a {
+        margin: 5px 0;
+        font-size: 0.9em;
+        padding: 5px 10px;
+        flex-basis: auto; 
+    }
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a.active-link {
+    color: #ffcc00;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.navigate-button {
+    border: none;
+}
+
+.read-more-button:hover,
+.read-more-button:focus-visible {
+    background-color: #e5b700;
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    border: 0;
+    background: #fff8d6;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.faq-question[aria-expanded="true"] {
+    background: #ffcc00;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 2px;
+}
